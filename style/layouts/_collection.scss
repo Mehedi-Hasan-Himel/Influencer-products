@@ -1,0 +1,62 @@
+/* Popular Collection Start */
+.collection {
+  width: 80%;
+  margin: 0 auto;
+  &__title {
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin-bottom: 5rem;
+    .card {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      box-shadow: 0px 10px 39px 10px whitesmoke;
+      border-radius: 1rem;
+      transition: transform 0.1s linear;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 39px 10px rgba(253, 207, 224, 0.822);
+      }
+      &-img {
+        overflow: hidden;
+        img {
+          width: 100%;
+          transition: transform 0.2s linear;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      p {
+        margin-top: 0;
+        width: 250px;
+      }
+    }
+  }
+}
+/* Popular Collection End */
+

@@ -300,5 +300,100 @@ main .e-commerce__img img:hover {
   }
 }
 
-/* Small screens, laptops Layout: 769px to 1024px */
+/* Popular Collection Start */
+.collection {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.collection__title {
+  text-align: center;
+}
+
+.collection__title h2 {
+  font-size: 2rem;
+}
+
+.collection__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 4fr 4fr;
+      grid-template-columns: 4fr 4fr 4fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.collection__cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 10px 39px 10px whitesmoke;
+          box-shadow: 0px 10px 39px 10px whitesmoke;
+  border-radius: 1rem;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+.collection__cards .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 10px 39px 10px rgba(253, 207, 224, 0.822);
+          box-shadow: 0px 10px 39px 10px rgba(253, 207, 224, 0.822);
+}
+
+.collection__cards .card-img {
+  overflow: hidden;
+}
+
+.collection__cards .card-img img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.collection__cards .card-img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.collection__cards .card h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.collection__cards .card h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.collection__cards .card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.collection__cards .card div p {
+  margin-bottom: 0;
+}
+
+.collection__cards .card p {
+  margin-top: 0;
+  width: 250px;
+}
+
+/* Popular Collection End */
 /*# sourceMappingURL=style.css.map */
