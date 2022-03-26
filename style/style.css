@@ -77,6 +77,7 @@ header nav .navigation ul li .nav-menu:hover {
     position: static;
   }
   header nav .navigation {
+    margin-left: 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -396,4 +397,32 @@ main .e-commerce__img img:hover {
 }
 
 /* Popular Collection End */
+/* Mobile devices Layout: 320px to 480px*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .collection {
+    width: 100%;
+  }
+  .collection__cards {
+    -ms-grid-columns: 12fr;
+        grid-template-columns: 12fr;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 1rem;
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+/* Small screens, laptops Layout: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .collection {
+    width: 100%;
+  }
+  .collection__cards {
+    -ms-grid-columns: 6fr 6fr;
+        grid-template-columns: 6fr 6fr;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

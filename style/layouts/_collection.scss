@@ -60,3 +60,32 @@
 }
 /* Popular Collection End */
 
+// Responsive Style Code
+
+/* Mobile devices Layout: 320px to 480px*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .collection {
+    width: 100%;
+    &__cards {
+      grid-template-columns: 12fr;
+      justify-self: center;
+      padding: 1rem;
+    }
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+
+/* Small screens, laptops Layout: 769px to 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .collection {
+    width: 100%;
+    &__cards {
+      grid-template-columns: 6fr 6fr;
+      justify-self: center;
+      padding: 1rem;
+    }
+  }
+}
