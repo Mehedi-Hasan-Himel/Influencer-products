@@ -1,42 +1,38 @@
 /* Nav Section Style Start */
 
 header {
-  position: fixed;
-  width: 100vw;
+  width: 100%;
   background-color: white;
-  margin-top: -25px;
-}
-nav {
-  // width: 60vw;
-  margin: 0 auto;
-  padding: 1rem;
-  box-shadow: 5px 5px 10px rgb(219, 234, 237);
-  &:hover {
-    box-shadow: 10px 10px 20px rgb(221, 243, 247);
-  }
-  .navigation {
-    display: flex;
-    justify-content: space-evenly;
-    h1 {
-      font-size: 24px;
+  margin-top: 0;
+  nav {
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(253, 207, 224, 0.822);
+    &:hover {
+      box-shadow: 10px 10px 20px rgb(253, 207, 224);
     }
-    ul {
+    .navigation {
       display: flex;
-      align-items: center;
-
-      li {
-        list-style: none;
-        padding-right: 2rem;
-        font-weight: 600;
-        transition: 0.5s;
-        .nav-menu {
-          text-decoration: none;
-          color: black;
-          padding: 1rem;
-
-          &:hover {
-            background-color: rgb(221, 243, 247);
-            border-radius: 5rem;
+      justify-content: space-evenly;
+      h1 {
+        font-size: 24px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          list-style: none;
+          padding-right: 2rem;
+          font-weight: 600;
+          transition: 0.5s;
+          .nav-menu {
+            text-decoration: none;
+            color: black;
+            padding: 1rem;
+            &:hover {
+              background-color: rgba(253, 207, 224, 0.822);
+              border-radius: 5rem;
+            }
           }
         }
       }
@@ -52,15 +48,15 @@ nav {
 @media (min-width: 320px) and (max-width: 480px) {
   header {
     position: static;
-  }
-  nav {
-    .navigation {
-      flex-direction: column;
-      text-align: center;
-      ul {
+    nav {
+      .navigation {
         flex-direction: column;
-        li {
-          margin-top: 1rem;
+        text-align: center;
+        ul {
+          flex-direction: column;
+          li {
+            margin-top: 1rem;
+          }
         }
       }
     }
@@ -72,17 +68,16 @@ nav {
 @media (min-width: 481px) and (max-width: 768px) {
   header {
     position: static;
-  }
-  nav {
-    box-shadow: 1px 1px 20px grey;
-
-    .navigation {
-      flex-direction: column;
-      text-align: center;
-      ul {
+    nav {
+      box-shadow: 1px 1px 20px grey;
+      .navigation {
         flex-direction: column;
-        li {
-          margin-top: 1rem;
+        text-align: center;
+        ul {
+          flex-direction: column;
+          li {
+            margin-top: 1rem;
+          }
         }
       }
     }
@@ -92,17 +87,19 @@ nav {
 /* Small screens, laptops Layout: 769px to 1024px */
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  nav{
-     .navigation{
-        ul{
-           li{
-              padding: 1rem;
-              .nav-menu{
-                 padding: 0;
-              }
-           }
+  header {
+    nav {
+      .navigation {
+        ul {
+          li {
+            padding: 1rem;
+            .nav-menu {
+              padding: 0;
+            }
+          }
         }
-     }
+      }
+    }
   }
 }
 

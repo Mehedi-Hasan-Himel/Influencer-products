@@ -81,13 +81,13 @@
     &__content {
       flex-wrap: nowrap;
       justify-content: space-evenly;
-      &-text{
-         h1{
-            font-size: 2rem;
-         }
-         .button{
-            margin-top: 10px;
-         }
+      &-text {
+        h1 {
+          font-size: 2rem;
+        }
+        .button {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -96,7 +96,6 @@
 /* Desktops, large screens: 1025px — 1200px */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-
 }
 
 /* Responsive Style Code End */

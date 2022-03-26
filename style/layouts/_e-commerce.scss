@@ -1,0 +1,65 @@
+/* E-Commerce Site Start */
+main {
+  margin-top: 3rem;
+  .e-commerce {
+    &__title {
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    hr {
+      width: 90vw;
+    }
+    &__img {
+      padding: 3rem;
+      width: 80vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        &:hover {
+          transform: scale(1.4);
+          transition: transform 0.1s linear;
+        }
+      }
+    }
+  }
+}
+/* E-Commerce Site End */
+
+/* Responsive Style Code*/
+
+/* Mobile devices Layout: 320px to 480px*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  main {
+    .e-commerce {
+      &__img {
+        flex-direction: column;
+        img {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  main {
+    .e-commerce {
+      &__img {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        img {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Small screens, laptops Layout: 769px to 1024px */
