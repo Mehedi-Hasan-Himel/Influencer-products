@@ -1,0 +1,102 @@
+/* Introduction Section Start */
+.introduction {
+  width: 90vw;
+  margin: 0 auto;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &-text {
+      width: 50%;
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
+      .button {
+        text-decoration: none;
+        color: white;
+        margin-top: 30px;
+        display: inline-block;
+        background-color: rgba(224, 44, 109, 1);
+        padding: 10px 24px;
+        border-radius: 41px;
+      }
+    }
+    &-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+/* Introduction Section End */
+
+/* Responsive Style Code Start */
+
+/* Mobile devices Layout: 320px to 480px*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .introduction {
+    width: 100vw;
+    &__content {
+      &-text {
+        text-align: center;
+        width: 90%;
+        h1 {
+          font-size: 2.3rem;
+        }
+      }
+      &-img {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .introduction {
+    width: 100vw;
+    &__content {
+      &-text {
+        text-align: center;
+        width: 90%;
+        h1 {
+          font-size: 2.3rem;
+        }
+      }
+      &-img {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+/* Small screens, laptops Layout: 769px to 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .introduction {
+    width: 90vw;
+    &__content {
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      &-text{
+         h1{
+            font-size: 2rem;
+         }
+         .button{
+            margin-top: 10px;
+         }
+      }
+    }
+  }
+}
+
+/* Desktops, large screens: 1025px — 1200px */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+/* Responsive Style Code End */

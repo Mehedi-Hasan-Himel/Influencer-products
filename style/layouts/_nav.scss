@@ -10,7 +10,10 @@ nav {
   // width: 60vw;
   margin: 0 auto;
   padding: 1rem;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px rgb(219, 234, 237);
+  &:hover {
+    box-shadow: 10px 10px 20px rgb(221, 243, 247);
+  }
   .navigation {
     display: flex;
     justify-content: space-evenly;
@@ -25,9 +28,86 @@ nav {
         list-style: none;
         padding-right: 2rem;
         font-weight: 600;
+        transition: 0.5s;
+        .nav-menu {
+          text-decoration: none;
+          color: black;
+          padding: 1rem;
+
+          &:hover {
+            background-color: rgb(221, 243, 247);
+            border-radius: 5rem;
+          }
+        }
       }
     }
   }
 }
 
-/* Nav Section Style End */
+/* Nav Responsive Style Start */
+// CSS Breaking Point.
+
+/* Mobile devices Layout: 320px to 480px*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    position: static;
+  }
+  nav {
+    .navigation {
+      flex-direction: column;
+      text-align: center;
+      ul {
+        flex-direction: column;
+        li {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    position: static;
+  }
+  nav {
+    box-shadow: 1px 1px 20px grey;
+
+    .navigation {
+      flex-direction: column;
+      text-align: center;
+      ul {
+        flex-direction: column;
+        li {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Small screens, laptops Layout: 769px to 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav{
+     .navigation{
+        ul{
+           li{
+              padding: 1rem;
+              .nav-menu{
+                 padding: 0;
+              }
+           }
+        }
+     }
+  }
+}
+
+/* Desktops, large screens: 1025px — 1200px */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+/* Nav Responsive Style End */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Common Style Code Start */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 body {
@@ -20,8 +21,13 @@ header {
 nav {
   margin: 0 auto;
   padding: 1rem;
-  -webkit-box-shadow: 5px 5px 10px grey;
-          box-shadow: 5px 5px 10px grey;
+  -webkit-box-shadow: 5px 5px 10px #dbeaed;
+          box-shadow: 5px 5px 10px #dbeaed;
+}
+
+nav:hover {
+  -webkit-box-shadow: 10px 10px 20px #ddf3f7;
+          box-shadow: 10px 10px 20px #ddf3f7;
 }
 
 nav .navigation {
@@ -50,7 +56,278 @@ nav .navigation ul li {
   list-style: none;
   padding-right: 2rem;
   font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-/* Nav Section Style End */
+nav .navigation ul li .nav-menu {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+
+nav .navigation ul li .nav-menu:hover {
+  background-color: #ddf3f7;
+  border-radius: 5rem;
+}
+
+/* Nav Responsive Style Start */
+/* Mobile devices Layout: 320px to 480px*/
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    position: static;
+  }
+  nav .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  nav .navigation ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .navigation ul li {
+    margin-top: 1rem;
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    position: static;
+  }
+  nav {
+    -webkit-box-shadow: 1px 1px 20px grey;
+            box-shadow: 1px 1px 20px grey;
+  }
+  nav .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  nav .navigation ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .navigation ul li {
+    margin-top: 1rem;
+  }
+}
+
+/* Small screens, laptops Layout: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav .navigation ul li {
+    padding: 1rem;
+  }
+  nav .navigation ul li .nav-menu {
+    padding: 0;
+  }
+}
+
+/* Desktops, large screens: 1025px — 1200px */
+/* Nav Responsive Style End */
+/* Introduction Section Start */
+.introduction {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.introduction__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.introduction__content-text {
+  width: 50%;
+}
+
+.introduction__content-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.introduction__content-text .button {
+  text-decoration: none;
+  color: white;
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border-radius: 41px;
+}
+
+.introduction__content-img img {
+  width: 100%;
+}
+
+/* Introduction Section End */
+/* Responsive Style Code Start */
+/* Mobile devices Layout: 320px to 480px*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .introduction {
+    width: 100vw;
+  }
+  .introduction__content-text {
+    text-align: center;
+    width: 90%;
+  }
+  .introduction__content-text h1 {
+    font-size: 2.3rem;
+  }
+  .introduction__content-img {
+    margin-top: 2rem;
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .introduction {
+    width: 100vw;
+  }
+  .introduction__content-text {
+    text-align: center;
+    width: 90%;
+  }
+  .introduction__content-text h1 {
+    font-size: 2.3rem;
+  }
+  .introduction__content-img {
+    margin-top: 2rem;
+  }
+}
+
+/* Small screens, laptops Layout: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .introduction {
+    width: 90vw;
+  }
+  .introduction__content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .introduction__content-text h1 {
+    font-size: 2rem;
+  }
+  .introduction__content-text .button {
+    margin-top: 10px;
+  }
+}
+
+/* Desktops, large screens: 1025px — 1200px */
+/* Responsive Style Code End */
+/* Introduction Section Start */
+.introduction {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.introduction__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.introduction__content-text {
+  width: 50%;
+}
+
+.introduction__content-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.introduction__content-text .button {
+  text-decoration: none;
+  color: white;
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border-radius: 41px;
+}
+
+.introduction__content-img img {
+  width: 100%;
+}
+
+/* Introduction Section End */
+/* Responsive Style Code Start */
+/* Mobile devices Layout: 320px to 480px*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .introduction {
+    width: 100vw;
+  }
+  .introduction__content-text {
+    text-align: center;
+    width: 90%;
+  }
+  .introduction__content-text h1 {
+    font-size: 2.3rem;
+  }
+  .introduction__content-img {
+    margin-top: 2rem;
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .introduction {
+    width: 100vw;
+  }
+  .introduction__content-text {
+    text-align: center;
+    width: 90%;
+  }
+  .introduction__content-text h1 {
+    font-size: 2.3rem;
+  }
+  .introduction__content-img {
+    margin-top: 2rem;
+  }
+}
+
+/* Small screens, laptops Layout: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .introduction {
+    width: 90vw;
+  }
+  .introduction__content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .introduction__content-text h1 {
+    font-size: 2rem;
+  }
+  .introduction__content-text .button {
+    margin-top: 10px;
+  }
+}
+
+/* Desktops, large screens: 1025px — 1200px */
+/* Responsive Style Code End */
 /*# sourceMappingURL=style.css.map */
