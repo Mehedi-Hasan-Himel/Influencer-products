@@ -19,6 +19,10 @@ body {
   border-radius: 41px;
 }
 
+ul li {
+  list-style: none;
+}
+
 /* Common Style Code End */
 /* Nav Section Style Start */
 header {
@@ -473,4 +477,62 @@ main .e-commerce__img img:hover {
 }
 
 /*Featured End*/
+.footer {
+  background-color: #0a0826;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.footer__text h2 {
+  text-align: center;
+}
+
+.footer__link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer__link ul li {
+  padding: 1.3rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.footer__link ul li i {
+  color: #fff;
+}
+
+.footer__link ul .facebook {
+  background: #3b5998;
+}
+
+.footer__link ul .instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.footer__link ul .linkedin {
+  background: #0e76a8;
+}
+
+.footer__link ul .twitter {
+  background: #00acee;
+}
 /*# sourceMappingURL=style.css.map */
