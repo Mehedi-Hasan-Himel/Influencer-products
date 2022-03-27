@@ -266,6 +266,11 @@ main .e-commerce__img {
           align-items: center;
 }
 
+main .e-commerce__img img {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 main .e-commerce__img img:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
@@ -516,8 +521,16 @@ main .e-commerce__img img:hover {
   border-radius: 50%;
 }
 
+.footer__link ul li:hover i {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  border-radius: 40%;
+}
+
 .footer__link ul li i {
   color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer__link ul .facebook {

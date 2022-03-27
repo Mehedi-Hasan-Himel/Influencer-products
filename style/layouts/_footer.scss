@@ -19,8 +19,15 @@
         padding: 1.3rem;
         margin-right: 1rem;
         border-radius: 50%;
+        &:hover {
+          i {
+            transform: scale(2);
+            border-radius: 40%;
+          }
+        }
         i {
           color: #fff;
+          transition: 0.5s;
         }
       }
       .facebook {
