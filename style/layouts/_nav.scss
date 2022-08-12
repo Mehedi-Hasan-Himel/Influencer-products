@@ -8,6 +8,10 @@ header {
     margin: 0 auto;
     padding: 1rem;
     box-shadow: 5px 5px 10px rgba(253, 207, 224, 0.822);
+    margin-bottom: 3rem;
+    h1{
+      cursor: pointer;
+    }
     &:hover {
       box-shadow: 10px 10px 20px rgb(253, 207, 224);
     }

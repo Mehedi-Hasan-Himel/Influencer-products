@@ -1,0 +1,114 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.main-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+   /* Form Design Start*/
+   .form-container {
+      .form {
+         width: 250px;
+         height: 380px;
+         background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+         // background-color:black;
+         border-radius: 10px;
+         padding: 25px;
+         h2 {
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: rgb(224, 44, 109);
+            font-size: 22px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+            cursor: pointer;
+            &:hover {
+               background-color: rgb(224, 44, 109);
+               color: #fff;
+            }
+         }
+         input {
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid rgb(224, 44, 109);
+
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+            &:focus {
+               outline: none;
+            }
+         }
+         .login-btn {
+            width: 240px;
+            height: 40px;
+            background: rgb(224, 44, 109);
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.4s ease;
+            &:hover {
+               background: #fff;
+               color: rgb(224, 44, 109);
+            }
+            a {
+               text-decoration: none;
+               color: #000;
+               font-weight: bold;
+            }
+         }
+         .link {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            padding-top: 20px;
+            text-align: center;
+            a {
+               text-decoration: none;
+               color: rgb(224, 44, 109);
+            }
+         }
+         .liw {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: #fff;
+         }
+         .icons a {
+            text-decoration: none;
+            color: #fff;
+            ion-icon {
+               color: #fff;
+               font-size: 30px;
+               padding-left: 14px;
+               padding-top: 5px;
+               transition: 0.3s ease;
+               &:hover {
+                  color: rgb(224, 44, 109);
+               }
+            }
+         }
+      }
+   }
+}
+
+/* Form Design End*/
+
+// Responsive Style Code
+
+/* Mobile devices Layout: 320px to 480px*/
