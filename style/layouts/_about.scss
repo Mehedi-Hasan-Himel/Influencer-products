@@ -1,0 +1,136 @@
+/* 
+****************************
+About Code Start
+****************************
+*/
+.area {
+   width: 1000px;
+   margin: 0 auto;
+}
+.header {
+   background-color: whitesmoke;
+   padding: 20px 0;
+}
+.fix::before,
+.fix::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+.logo {
+   float: left;
+   width: 20%;
+   margin-right: 3%;
+}
+.menu {
+   float: right;
+   width: 65%;
+}
+
+.menu ul {
+   text-align: right;
+   margin-top: 14px;
+}
+
+.menu ul li {
+   display: inline-block;
+}
+
+.menu ul li a {
+   color: #333;
+   padding: 10px 15px;
+   display: block;
+   font-size: 20px;
+   -webkit-transition: 0.3s;
+   transition: 0.3s;
+}
+
+.menu ul li a:hover {
+   background-color: rgba(224, 44, 109, 1);
+   color: white;
+}
+.page-banner {
+   background-size: cover;
+   background-position: center;
+   padding: 110px 0;
+   position: relative;
+   z-index: 2;
+}
+
+.page-banner::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background-color: rgba(224, 44, 109, 1);
+   opacity: 0.7;
+   z-index: -1;
+}
+
+.page-banner h2 {
+   text-align: center;
+   color: #fff;
+   text-transform: capitalize;
+   font-size: 50px;
+}
+.about-left h4,
+.about-menu h4 {
+   font-size: 26px;
+   margin-bottom: 20px;
+}
+.about-left h4,
+.about-menu h4 {
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+.about-menu {
+   float: right;
+   width: 25%;
+}
+
+.about-menu ul li {
+   background-image: url(../img/arrow.png);
+   background-repeat: no-repeat;
+   background-position: -7px 1px;
+   padding-left: 22px;
+   margin-bottom: 10px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #ddd;
+}
+
+.about-menu ul li:last-child {
+   border-bottom: 0;
+}
+
+.about-menu ul li a {
+   font-size: 20px;
+   display: block;
+   -webkit-transition: 0.3s;
+   transition: 0.3s;
+}
+
+.about-menu ul li a:hover {
+   color: rgba(224, 44, 109, 1);
+}
+.footer__area {
+  background-color: teal;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: bold;
+}
+/* 
+****************************
+About Code End
+****************************
+*/

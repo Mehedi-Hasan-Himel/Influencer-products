@@ -13,16 +13,23 @@ body {
   margin-top: 30px;
   display: inline-block;
   background-color: rgba(224, 44, 109, 1);
+  border: 2px solid rgba(224, 44, 109, 1);
   padding: 10px 24px;
   border-radius: 41px;
+  &:hover {
+    transition: .4s ;
+    background-color: transparent;
+    color: black;
+    // border: 2px solid rgba(224, 44, 109, 1);
+  }
 }
 
-ul{
-  li{
+ul {
+  li {
     list-style: none;
   }
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }

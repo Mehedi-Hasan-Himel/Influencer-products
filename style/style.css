@@ -14,8 +14,14 @@ body {
   margin-top: 30px;
   display: inline-block;
   background-color: rgb(224, 44, 109);
+  border: 2px solid rgb(224, 44, 109);
   padding: 10px 24px;
   border-radius: 41px;
+}
+.button:hover {
+  transition: 0.4s;
+  background-color: transparent;
+  color: black;
 }
 
 ul li {
@@ -254,6 +260,10 @@ main .e-commerce__img img:hover {
 .collection__title h2 {
   font-size: 2rem;
 }
+.collection__category ul {
+  display: flex;
+  justify-content: space-around;
+}
 .collection__cards {
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
@@ -302,6 +312,10 @@ main .e-commerce__img img:hover {
 .collection__cards .card p {
   margin-top: 0;
   width: 250px;
+}
+.collection__cards .card .margin-top-bottom {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* Popular Collection End */
@@ -372,6 +386,9 @@ main .e-commerce__img img:hover {
   align-items: center;
   justify-content: center;
   color: white;
+}
+.footer__text {
+  margin-bottom: 2rem;
 }
 .footer__text h2 {
   text-align: center;
@@ -511,4 +528,148 @@ main .e-commerce__img img:hover {
 }
 
 /* Form Design End*/
-/* Mobile devices Layout: 320px to 480px*//*# sourceMappingURL=style.css.map */
+/* Mobile devices Layout: 320px to 480px*/
+/* 
+****************************
+About Code Start
+****************************
+*/
+.area {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: whitesmoke;
+  padding: 20px 0;
+}
+
+.fix::before,
+.fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  width: 20%;
+  margin-right: 3%;
+}
+
+.menu {
+  float: right;
+  width: 65%;
+}
+
+.menu ul {
+  text-align: right;
+  margin-top: 14px;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  background-color: rgb(224, 44, 109);
+  color: white;
+}
+
+.page-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 110px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.page-banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(224, 44, 109);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.page-banner h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.about-left h4,
+.about-menu h4 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.about-left h4,
+.about-menu h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.about-menu {
+  float: right;
+  width: 25%;
+}
+
+.about-menu ul li {
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: -7px 1px;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.about-menu ul li:last-child {
+  border-bottom: 0;
+}
+
+.about-menu ul li a {
+  font-size: 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+.about-menu ul li a:hover {
+  color: rgb(224, 44, 109);
+}
+
+.footer__area {
+  background-color: teal;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 
+****************************
+About Code End
+****************************
+*//*# sourceMappingURL=style.css.map */

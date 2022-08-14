@@ -9,6 +9,12 @@
       font-size: 2rem;
     }
   }
+  &__category {
+    ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
   &__cards {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
@@ -55,6 +61,10 @@
       p {
         margin-top: 0;
         width: 250px;
+      }
+      .margin-top-bottom {
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
     }
   }
